@@ -585,7 +585,7 @@ genrule(
         "//src/conditions:linux_aarch64": ["netty_tcnative/netty-tcnative-boringssl-static-2.0.51.Final-linux-aarch_64.jar"],
         "//src/conditions:linux_x86_64": ["netty_tcnative/netty-tcnative-boringssl-static-2.0.51.Final-linux-x86_64.jar"],
         "//src/conditions:windows": ["netty_tcnative/netty-tcnative-boringssl-static-2.0.51.Final-windows-x86_64.jar"],
-        "//conditions:default": [],
+        "//conditions:default": ["netty_tcnative/netty-tcnative-2.0.28-all.jar"]
     }),
     outs = ["netty_tcnative/netty-tcnative-filtered.jar"],
     cmd = "cp $< $@ && " +
